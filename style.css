@@ -26,4 +26,10 @@ td:first-child { font-weight: 700; width: 34%; }
 ul { padding-left: 22px; } li { margin: 0 0 8px; }
 p { margin: 0 0 18px; }
 footer { max-width: 680px; margin: 40px auto 0; padding: 0 22px 64px; color: var(--soft); font-size: 14px; }
-@media (max-width: 420px) { h1 { font-size: 36px; } .pages { gap: 10px; } }
+.film { margin: 28px 0 8px; }
+.film video { display: block; width: 100%; height: auto; border: 3px solid var(--ink); border-radius: 4px; background: #16120f; box-shadow: 0 4px 18px rgba(22, 18, 15, 0.18); }
+.film.tall video { max-width: 360px; margin: 0 auto; }
+.film p { color: var(--soft); font-size: 14px; margin: 8px 0 0; text-align: center; }
+.shots { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin: 20px 0 8px; }
+.shots img { width: 100%; height: auto; border: 2px solid var(--ink); border-radius: 4px; }
+@media (max-width: 420px) { h1 { font-size: 36px; } .pages { gap: 10px; } .shots { grid-template-columns: repeat(3, 1fr); gap: 8px; } }
